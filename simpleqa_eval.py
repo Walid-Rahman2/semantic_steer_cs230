@@ -4,7 +4,6 @@ import time
 import re
 
 # Initialize OpenAI client
-client = OpenAI(api_key="retracted-for-privacy")
 GRADER_TEMPLATE = """
 Your job is to look at a question, a gold target, and a predicted answer, and then assign a grade of either ["CORRECT", "INCORRECT", "NOT_ATTEMPTED"].
 First, I will give examples of each grade, and then you will grade a new example.
