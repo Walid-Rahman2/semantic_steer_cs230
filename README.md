@@ -30,7 +30,7 @@ This project explores semantic entropy probes (SEPs) applied to the Llama2-7b la
 ## **Main Notebook**  
 The primary entry point for this project is the `run_probes.ipynb` notebook. Follow these steps to run the project:  
 
-### **1. Loading Precomputed Probes**  
+### **1. Download Precomputed Probes**  
 Precomputed SEPs are provided for **SLT** and **TBG** token positions:  
 - `model_dict_slt_ent.pkl`  
 - `model_dict_tbh_ent.pkl`  
