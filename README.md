@@ -35,7 +35,7 @@ Precomputed SEPs are provided for **SLT** and **TBG** token positions:
 - `model_dict_slt_ent.pkl`  
 - `model_dict_tbh_ent.pkl`  
 
-These files, sourced from [Kossen et al.](https://github.com/OATML/semantic-entropy-probes), have been reformatted for ease of use. Each file contains probes for all layers of the **Llama2-7b model**.
+These files contains the probes trained via the notebook provided by  [Kossen et al.](https://github.com/OATML/semantic-entropy-probes). Each file contains probes for all layers of the **Llama2-7b model**.
 
 ### **2. Data Preparation**  
 - Load the **SQuAD v2 dataset** and generate prompts following the styles used in the SEP construction.  
