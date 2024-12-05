@@ -54,7 +54,7 @@ To download the Steering vectors, please use the [CAA repository](https://github
 - Run the KL_model.ipynb to train the KL model to guide steering
 
 
-NOTE: milestone contains code from the milestone.
+NOTE: the milestone folder contains code from the milestone
 
 ---
 
