@@ -28,34 +28,38 @@ This project explores semantic entropy probes (SEPs) applied to the Llama2-7b la
 ---
 
 ## **Main Notebook**  
-The primary entry point for this project is the `run_probes.ipynb` notebook. Follow these steps to run the project:  
+First run the generate_answers_run_probes.ipynb. Then run KL_model.ipynb.
 
-### **1. Download Precomputed Probes**  
+### **1. Download Precomputed Probes and Steering Vectors**  
 Precomputed SEPs are provided for **SLT** and **TBG** token positions:  
 - `model_dict_slt_ent.pkl`  
 - `model_dict_tbh_ent.pkl`  
 
 These files contains the probes trained via the notebook provided by  [Kossen et al.](https://github.com/OATML/semantic-entropy-probes). Each file contains probes for all layers of the **Llama2-7b model**.
 
+To download the Steering vectors, please use the [CAA repository](https://github.com/nrimsky/CAA). 
+
 ### **2. Data Preparation**  
-- Load the **SQuAD v2 dataset** and generate prompts following the styles used in the SEP construction.  
+- Load the **SQuAD v2 dataset** and generate prompts following the styles used in the SEP construction. This is done in generate_answers_run_probes.ipynb.
 
 ### **3. Model Setup**  
-- Load the **Llama2-7b model** and initialize the **SimpleQA Evaluator**.  
+- Load the **Llama2-7b model** 
 - Load the **Semantic Entropy Probes (SEPs)**.  
+- Load the steering vectors
 
 ### **4. End-to-End Flow**  
-- Generate answers for 1,000 samples from the dataset.  
-- Capture hidden states at **TBG** and **SLT** positions.  
-- Store SEP outputs and generated answers in a **Pandas DataFrame**.  
+- Run generate_answers_run_probes.ipynb to generate answers from LLMs using steering vectors and also run the SEP probes.
+- Run the KL_model.ipynb to train the KL model to guide steering
 
-**Note:** Results are stored every 20 rows to prevent data loss and ensure smooth operation.
+
+NOTE: milestone contains code from the milestone.
 
 ---
 
 ## **References**  
 This project leverages the work of Kossen et al. on **Semantic Entropy Probes**:  
-- Repository: [OATML Semantic Entropy Probes](https://github.com/OATML/semantic-entropy-probes).  
+- SEP Repository: [OATML Semantic Entropy Probes](https://github.com/OATML/semantic-entropy-probes).  
+- CAA Repository: (https://github.com/nrimsky/CAA)
 
 For questions or contributions, please reach out to the project team:  
 - Walid Rahman  
@@ -68,4 +72,3 @@ For questions or contributions, please reach out to the project team:
 This project is for educational purposes as part of **CS230 coursework**. Please respect the terms of usage for any external tools and datasets.
 
 ---
-
