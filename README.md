@@ -23,7 +23,7 @@ This project explores semantic entropy probes (SEPs) applied to the Llama2-7b la
 2. **Prerequisites**  
    - **Model Access**: Ensure you have access to the **Llama2-7b model**.  
    - **Hardware**: A **GPU** is required to run the model efficiently.  
-   - **OpenAI API Key**: Set your OpenAI API key in `run_probes.py`.  
+   - **OpenAI API Key**: Please supply your own key.  
 
 ---
 
