@@ -7,8 +7,10 @@
 This project explores semantic entropy probes (SEPs) applied to the Llama2-7b language model. It includes:  
 - Integration with the **Llama2-7b model**.  
 - Use of **Semantic Entropy Probes (SEPs)**, precomputed for specific token positions.  
-- Dataset prompts and evaluations using **SQuAD v2**.  
-- Comprehensive analysis using the **SimpleQA Evaluator** to study model behavior.  
+- Dataset prompts and evaluations using **SQuAD v2**.
+- Steering of models using steering vectors
+- Comprehensive analysis using the **our custom scorerr** to study model behavior.
+- **KL MODEL TO GUIDE MODEL STEERING BASED ON SEPs**
 
 ---
 
