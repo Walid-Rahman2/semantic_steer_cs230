@@ -1,6 +1,6 @@
 # **Using Semantic Entropy Probes to Efficiently Steer Away from LLM Hallucinations**  
 
-PAPER: https://github.com/Walid-Rahman2/semantic_steer_cs230/blob/main/Probe_steering_Guiding%20LLM%20Behavior%20Away%20From%20Hallucination.pdf
+PAPER LINK[https://github.com/Walid-Rahman2/semantic_steer_cs230/blob/main/Probe_steering_Guiding%20LLM%20Behavior%20Away%20From%20Hallucination.pdf]
 
 **CS230 Course Project by Walid Rahman, Alex Popa, and Dilan Nana**  
 
